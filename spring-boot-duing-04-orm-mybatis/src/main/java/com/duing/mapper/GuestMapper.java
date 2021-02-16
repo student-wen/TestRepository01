@@ -8,7 +8,7 @@ import org.apache.ibatis.annotations.Select;
 import java.util.List;
 
 //@Mapper
-public interface GuestMapper{
+public interface GuestMapper {
 
     @Select("select name,role from guest")
     List<Guest> getGuests();

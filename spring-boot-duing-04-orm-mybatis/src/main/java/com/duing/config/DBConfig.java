@@ -10,15 +10,15 @@ import javax.sql.DataSource;
 @Configuration
 public class DBConfig {
 
-    @Bean(name="db1")
+    @Bean(name = "db1")
     @ConfigurationProperties("spring.datasource.db1")
-    public DataSource datasource1(){
+    public DataSource datasource1() {
         return DataSourceBuilder.create().build();
     }
 
-    @Bean(name="db2")
+    @Bean(name = "db2")
     @ConfigurationProperties("spring.datasource.db2")
-    public DataSource datasource2(){
+    public DataSource datasource2() {
         return DataSourceBuilder.create().build();
     }
 }

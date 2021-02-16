@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
 import javax.sql.DataSource;
 
 @Configuration
-@MapperScan(basePackages = "com.duing.mapper",sqlSessionFactoryRef = "sqlSessionFactory1")
+@MapperScan(basePackages = "com.duing.mapper", sqlSessionFactoryRef = "sqlSessionFactory1")
 public class DBOneConfig {
 
     @Autowired
